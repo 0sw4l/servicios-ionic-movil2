@@ -1,0 +1,37 @@
+<ion-view title="Registrarse" id="page8">
+    <ion-content padding="true" class="has-header">
+        <form ng-submit="doSignup()" class="list">
+            <ion-list id="registrarse-list3">
+                <label class="item item-input">
+                    <span class="input-label">Usuario</span>
+                    <input type="text" ng-model="SignupData.usuario" placeholder="Escriba su usuario">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Contraseña</span>
+                    <input type="password" ng-model="SignupData.password" placeholder="Escriba su contraseña">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Nombre</span>
+                    <input type="text" ng-model="SignupData.nombre" placeholder="Escriba su nombre">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Apellido</span>
+                    <input type="text" ng-model="SignupData.apellido" placeholder="Escriba su apellido">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Direccion</span>
+                    <input type="text" ng-model="SignupData.direccion"  placeholder="Escriba su direccion">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Telefono</span>
+                    <input type="text" ng-model="SignupData.telefono"  placeholder="Escriba su telefono">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Celular</span>
+                    <input type="text" ng-model="SignupData.celular"  placeholder="Escriba su celular">
+                </label>
+            </ion-list>
+            <button type="submit" id="registrarse-button13" class="button button-balanced  button-block">Registrarse</button>
+        </form>
+    </ion-content>
+</ion-view>
