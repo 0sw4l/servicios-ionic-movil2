@@ -24,7 +24,7 @@ angular.module('app.routes', ['ionicUIRouter'])
       /page1/tab3/page2
   */
   .state('tabsController.serviciosDisponibles', {
-    url: '/page2',
+    url: '/page2/:categoriaId',
     views: {
       'tab1': {
         templateUrl: 'templates/serviciosDisponibles.html',
