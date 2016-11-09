@@ -51,7 +51,7 @@ angular.module('app.routes', ['ionicUIRouter'])
       /page1/tab3/page3
   */
   .state('tabsController.detalleDeServicio', {
-    url: '/page3',
+    url: '/page3/:servicioId',
     views: {
       'tab1': {
         templateUrl: 'templates/detalleDeServicio.html',

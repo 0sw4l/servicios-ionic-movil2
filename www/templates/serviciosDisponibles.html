@@ -6,27 +6,16 @@
                 <input type="search" placeholder="Escribe para buscar...">
             </label>
         </form>
-        <div class="list card" id="serviciosDisponibles-card21">
-            <ion-item class="item-icon-left" id="serviciosDisponibles-list-item11">
-                <i class="icon ion-android-person"></i>Bairon Londoño</ion-item>
-            <div class="item item-body" id="serviciosDisponibles-list-item-container1">
-                <div id="serviciosDisponibles-markdown1" style="margin-top:0px;color:#000000;text-align:center;">
-                    <p>soy entretenedor profesional con
-                        <strong>20</strong>años de experiencia en el mercado.</p>
-                </div>
-            </div>
-            <a ui-sref="tabsController.detalleDeServicio" id="serviciosDisponibles-button5" class="button button-positive button-small button-block icon-right ion-eye">Ver informacion</a>
-        </div>
-        <div class="list card" id="serviciosDisponibles-card22">
-            <ion-item class="item-icon-left" id="serviciosDisponibles-list-item14">
-                <i class="icon ion-android-person"></i>Bairon Londoño</ion-item>
-            <div class="item item-body" id="serviciosDisponibles-list-item-container2">
-                <div id="serviciosDisponibles-markdown2" style="margin-top:0px;color:#000000;text-align:center;">
-                    <p>soy entretenedor profesional con
-                        <strong>20</strong>años de experiencia en el mercado.</p>
-                </div>
-            </div>
-            <a ui-sref="tabsController.detalleDeServicio" id="serviciosDisponibles-button7" class="button button-positive button-small button-block icon-right ion-eye">Ver informacion</a>
-        </div>
+    
+
+
+
+    <ion-list>
+        <ion-item ng-repeat="servicio in servicios" href="#/page1/tab1/page3/{{servicio.id}}">
+            {{ servicio.nombre }}
+        </ion-item>
+        
+    </ion-list>
+
     </ion-content>
 </ion-view>
